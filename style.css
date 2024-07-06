@@ -1,0 +1,137 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-image:url(gaming-background-blue-and-purple-with-element-vector.jpg);
+	color: #fff;
+}
+/* To center everything in game */
+.game{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Title of the game */
+.title{
+	position: absolute;
+	top: 0;
+	font-size: 4rem;
+	z-index: 2;
+}
+
+/* Score Board */
+.score{
+	display: flex;
+	width: 30vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 70px;
+	z-index: 1;
+}
+
+/* Score */
+.p-count,.c-count{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.options{
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+
+/* Styling on all four buttons */
+.rock, .paper, .scissor,.butn{
+	padding: 0.8rem;
+	width: 100px;
+	border-radius: 10px;
+	background: yellowgreen;
+	outline: none;
+	border-color: green;
+	border: none;
+	cursor: pointer;
+}
+
+.move{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* Reload button style */
+.reload {
+	display: none;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: green;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.result{
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+
+.butn { 
+    background: #82cf30; 
+    font-family:sans-serif;
+
+    font-weight: 100;
+    font-style: normal;
+
+    border-radius: 10px; 
+    color: #fffffff3; 
+    font-size: 15px; 
+    padding: 16px 25px 16px 25px; 
+    text-decoration: none; 
+} 
+
+.butn:hover { 
+    background: #222055; 
+    text-decoration:none; 
+    
+} 
+.rock:hover{
+    background: #33346a; 
+    text-decoration: none; 
+    
+
+}
+.paper:hover{
+    background: #33346a; 
+    text-decoration: none; 
+    
+
+}
+.scissor:hover{
+    background: #33346a; 
+    text-decoration: none; 
+    
+
+}
+@media screen and (max-width: 612px)
+{ 
+	.title{
+		text-align: center;
+	}
+	.score{
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+	.options{
+		width: 100vw;
+	}
+    
+}
